@@ -1,57 +1,44 @@
-# 🩺 Heart Disease Prediction using Machine Learning
+# ❤️ Heart Disease Prediction App
 
-## 📜 Description  
-A machine learning project for predicting heart disease using patient health data.  
-Models like **KNN, SVM, Decision Tree, and Random Forest** are trained and compared.  
-Includes **data visualization, evaluation metrics, and saved `.pkl` models** for deployment.  
-👉 Frontend (Streamlit/Flask app) will be uploaded soon!  
+This project is a **Machine Learning powered Heart Disease Prediction App** built with **Python & Streamlit**.  
+It uses **multiple trained ML models (KNN, SVM, Decision Tree, Random Forest)** to predict the likelihood of heart disease.  
+The app is live on **Hugging Face Spaces**.
 
 ---
 
-## ⚙️ Models Implemented
-- K-Nearest Neighbors (KNN)  
-- Support Vector Machine (SVM)  
-- Decision Tree Classifier  
-- Random Forest Classifier  
-
----
-
-## 📊 Dataset  
-The dataset used is the **UCI Heart Disease dataset** (or Kaggle equivalent).  
-**Features**: Age, Sex, Chest pain type, Resting BP, Cholesterol, Max HR, etc.  
-**Target**:  
-- `0` → No Heart Disease  
-- `1` → Heart Disease Present  
-
----
-
-## 🚀 Steps in the Project
-1. Data Cleaning & Preprocessing  
-2. Feature Visualization (scatter plots, PCA, pairplots)  
-3. Model Training with KNN, SVM, Decision Tree, Random Forest  
-4. Model Evaluation: Accuracy, Precision, Recall, F1-Score, Confusion Matrix  
-5. Model Saving with **Pickle (`.pkl` files)**  
-
----
-
-## 📈 Results
-- **KNN (k=1)** achieved the highest accuracy (~97–99%).  
-- Other models performed well but slightly lower depending on tuning.  
-- Trade-off: small `k` in KNN captures detail (may overfit), larger `k` generalizes better.  
+## 🚀 Features
+- Trained and compared **multiple models** for prediction.  
+- Models stored in `.pkl` format for reuse.  
+- Streamlit-based frontend (`app.py`) for interactive use.  
+- Soon: Advanced frontend with more interactive visualizations.  
 
 ---
 
 ## 🛠️ Tech Stack
-- Python 🐍  
-- Scikit-learn  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
+- Python  
+- Pandas, NumPy, Scikit-learn  
+- Streamlit  
+- Hugging Face Spaces  
 
 ---
 
-## ▶️ How to Use  
+## 📊 Models Information
+We trained and evaluated multiple ML models to compare performance:  
 
-1. **Clone the repository**  
+| Model             | Accuracy (mean) |
+|-------------------|-----------------|
+| **K-Nearest Neighbors (KNN)** | ~97% |
+| **Support Vector Machine (SVM)** | ~84% |
+| **Decision Tree** | ~70% |
+| **Random Forest** | ~72% |
+
+👉 Final `.pkl` file contains all these models, so the app can be easily extended to switch between them.  
+
+---
+
+## ⚙️ Installation & Usage
+
+### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/heart-disease-prediction.git
-cd heart-disease-prediction
+git clone https://github.com/your-username/heart_disease.git
+cd heart_disease
